@@ -56,26 +56,79 @@
 
       <!-- Example row of columns -->
       <div class="row">
-        <div class="span4">
-          <form action="clients.html" method="POST">
-            <h2>Sign in</h2>
-            <fieldset>
-              <div class="clearfix">
-                <input id="id_username" type="text" name="username" maxlength="30" placeholder="User Name">
-              </div>
-              <div class="clearfix">
-                <input type="password" name="password" id="id_password" placeholder="Password">
-              </div>
-              <button class="btn btn-primary btn-large" type="submit">Sign in</button>
-            </fieldset>
-          </form>
+        <div class="span12">
+          <div class="pull-right" style="margin-bottom: 10px;">
+            <button class="btn btn-primary" type="button" >Add Pill Wizard Client</button>
+            <button class="btn btn-primary" type="button" >Add Prescription</button>
+          </div>
        </div>
+      </div>
+      <div class="row">
+        <div class="span4">
+          <table class="table">
+            <thead>
+              <tr><th>Client</th></tr>
+            </thead>
+            <tbody>
+              <tr class="info">
+                <td><a href="#">Mark Vismonte</a></td>
+              </tr>
+              <tr>
+                <td><a href="#">Jacob Wood</a></td>
+              </tr>
+              <tr>
+                <td><a href="#">Grace Kim</a></td>
+              </tr>
+              <tr>
+                <td><a href="#">April McGuire</a></td>
+              </tr>
+            </tbody>
+          </table>
+       </div>
+        <div class="span8">
+          <dl class="dl-horizontal">
+            <dt>Name</dt>
+            <dd>Mark Vismonte</dd>
+            <dt>Age</dt>
+            <dd>21</dd>
+            <dt>Address</dt>
+            <dd>601 Westholme Ave.</dd>
+            <dt>Caretaker</dt>
+            <dd>Seph Barker</dd>
+          </dl>
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Medicine<th>
+                <th>Dosage<th>
+                <th>Information<th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Medicine<td>
+                <td>Dosage<td>
+                <td>Information<td>
+              </tr>
+              <tr>
+                <td>Medicine<td>
+                <td>Dosage<td>
+                <td>Information<td>
+              </tr>
+              <tr>
+                <td>Medicine<td>
+                <td>Dosage<td>
+                <td>Information<td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
 
       <hr>
 
       <footer>
-        <p>© MediPod 2012</p>
+        <p>© The Pill Wizard 2012</p>
       </footer>
 
     </div>
