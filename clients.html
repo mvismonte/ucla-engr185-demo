@@ -1,3 +1,4 @@
+<!DOCTYPE HTML>
 <html lang="en"><head>
     <meta charset="utf-8">
     <title>The Pill Wizard</title>
@@ -43,111 +44,119 @@
               <li class="active"><a href="#">Home</a></li>
               <li><a href="#about">About</a></li>
               <li><a href="#contact">Contact</a></li>
+              <li><a href="simulation.html">Simulation</a></li>
             </ul>
-            <div class="navbar-text pull-right">
-              Welcome, Dr. Vismonte!
-            </div>
+            <p class="navbar-text pull-right">
+              Welcome, Mr. Caretaker!
+            </p>
           </div><!--/.nav-collapse -->
         </div>
       </div>
     </div>
 
 <div class="container">
-
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="span12">
-          <div class="pull-right" style="margin-bottom: 10px;">
-            <button class="btn btn-primary" type="button" >Add Pill Wizard Client</button>
-            <button class="btn btn-primary" type="button" >Add Prescription</button>
-          </div>
-       </div>
-      </div>
-      <div class="row">
-        <div class="span4">
-          <table class="table">
-            <thead>
-              <tr><th>Client</th></tr>
-            </thead>
-            <tbody>
-              <tr class="info">
-                <td><a href="#">Mark Vismonte</a></td>
-              </tr>
-              <tr>
-                <td><a href="#">Jacob Wood</a></td>
-              </tr>
-              <tr>
-                <td><a href="#">Grace Kim</a></td>
-              </tr>
-              <tr>
-                <td><a href="#">April McGuire</a></td>
-              </tr>
-            </tbody>
-          </table>
-       </div>
-        <div class="span8">
-          <dl class="dl-horizontal">
-            <dt>Name</dt>
-            <dd>Mark Vismonte</dd>
-            <dt>Age</dt>
-            <dd>21</dd>
-            <dt>Address</dt>
-            <dd>601 Westholme Ave.</dd>
-            <dt>Caretaker</dt>
-            <dd>Seph Barker</dd>
-          </dl>
-          <table class="table">
-            <thead>
-              <tr>
-                <th>Medicine<th>
-                <th>Dosage<th>
-                <th>Information<th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Medicine<td>
-                <td>Dosage<td>
-                <td>Information<td>
-              </tr>
-              <tr>
-                <td>Medicine<td>
-                <td>Dosage<td>
-                <td>Information<td>
-              </tr>
-              <tr>
-                <td>Medicine<td>
-                <td>Dosage<td>
-                <td>Information<td>
-              </tr>
-            </tbody>
-          </table>
+  <div id="client-page">
+    <!-- Example row of columns -->
+    <div class="row">
+      <div class="span12">
+        <div class="pull-right" style="margin-bottom: 10px;">
+          <button class="btn btn-primary" type="button" >Add Pill Wizard Client</button>
+          <button class="btn btn-primary" type="button" >Add Prescription</button>
         </div>
       </div>
-
-      <hr>
-
-      <footer>
-        <p>© The Pill Wizard 2012</p>
-      </footer>
-
     </div>
+    <div class="row">
+      <div class="span4">
+        <table class="table">
+          <thead>
+            <tr><th>Client</th></tr>
+          </thead>
+          <tbody data-bind="foreach: clients">
+            <tr data-bind="css: { success: $data == $root.currentClient() }">
+              <td><a href="#" data-bind="text: name, click: $root.newClient"></a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="span8" data-bind="with: currentClient">
+        <dl class="dl-horizontal">
+          <dt>Name</dt>
+          <dd data-bind="text: name"></dd>
+          <dt>Age</dt>
+          <dd data-bind="text: personal_info.age"></dd>
+          <dt>Address</dt>
+          <dd data-bind="text: personal_info.address"></dd>
+          <dt>Doctor</dt>
+          <dd data-bind="text: personal_info.caretaker"></dd>
+        </dl>
+        <ul class="nav nav-tabs">
+          <li class="active"><a href="#prescriptions" data-toggle="tab">Prescriptions</a></li>
+          <li><a href="#medication-log" data-toggle="tab">Medication Log</a></li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane active" id="prescriptions">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Medicine</th>
+                  <th>Cannister</th>
+                  <th>Schedule</th>
+                  <th>Dosage</th>
+                  <th>Information</th>
+                </tr>
+              </thead>
+              <tbody data-bind="foreach: prescriptions">
+                <tr>
+                  <td data-bind="text: medicine"></td>
+                  <td data-bind="text: cannister"></td>
+                  <td data-bind="text: schedule"></td>
+                  <td data-bind="text: dosage"></td>
+                  <td data-bind="text: information"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="tab-pane" id="medication-log">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Medicine<th>
+                  <th>Date<th>
+                  <th>Time<th>
+                  <th>Drug Taken?<th>
+                </tr>
+              </thead>
+              <tbody data-bind="foreach: medication_log">
+                <tr data-bind="css: { error: !medicine_taken }">
+                  <td data-bind="text: medicine">d<td>
+                  <td data-bind="text: date">d<td>
+                  <td data-bind="text: time">d<td>
+                  <td><i data-bind="css: { 'icon-ok': medicine_taken, 'icon-ban-circle': !medicine_taken }"></i><td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+
+    <footer>
+      <p>© 2013 Phillips Healthcare</p>
+    </footer>
+  </div>
+</div>
+
+
+
 
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="static/js/jquery.js"></script>
-    <script src="static/js/bootstrap-transition.js"></script>
-    <script src="static/js/bootstrap-alert.js"></script>
-    <script src="static/js/bootstrap-modal.js"></script>
-    <script src="static/js/bootstrap-dropdown.js"></script>
-    <script src="static/js/bootstrap-scrollspy.js"></script>
-    <script src="static/js/bootstrap-tab.js"></script>
-    <script src="static/js/bootstrap-tooltip.js"></script>
-    <script src="static/js/bootstrap-popover.js"></script>
-    <script src="static/js/bootstrap-button.js"></script>
-    <script src="static/js/bootstrap-collapse.js"></script>
-    <script src="static/js/bootstrap-carousel.js"></script>
-    <script src="static/js/bootstrap-typeahead.js"></script>
+    <script src="static/js/knockout.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="static/js/data.js"></script>
+    <script src="static/js/clients.js"></script>
 
 </body></html>

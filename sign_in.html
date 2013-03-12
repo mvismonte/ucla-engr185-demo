@@ -1,3 +1,4 @@
+<!DOCTYPE HTML>
 <html lang="en"><head>
     <meta charset="utf-8">
     <title>The Pill Wizard</title>
@@ -54,25 +55,42 @@
       <!-- Example row of columns -->
       <div class="row">
         <div class="span4 offset4">
-          <form action="clients.html" method="POST">
-            <h2>Sign in</h2>
+          <ul class="nav nav-tabs">
+            <li class="active"><a href="#home" data-toggle="tab">Login</a></li>
+            <li><a href="#profile" data-toggle="tab">Registration</a></li>
+          </ul>
+          <div class="tab-pane active" id="wpmem_login">
+            <a name="login"></a>
+            <form action="clients.html" method="POST" class="form">
             <fieldset>
-              <div class="clearfix">
-                <input id="id_username" type="text" name="username" maxlength="30" placeholder="User Name">
+              <legend>Existing Caretaker Login</legend>
+                
+              <label for="username">Username</label>
+              <div class="div_text">
+                <div class="input-prepend"><span class="add-on"><i class="icon-user"></i></span><input name="log" type="text" id="log inputIcon" value="" class="input-large"></div>
               </div>
-              <div class="clearfix">
-                <input type="password" name="password" id="id_password" placeholder="Password">
+              
+              <label for="password">Password</label>
+              <div class="div_text">
+                <div class="input-prepend"><span class="add-on"><i class="icon-lock"></i></span><input name="pwd" type="password" id="pwd inputIcon" class="input-large"></div>
               </div>
-              <button class="btn btn-primary btn-large" type="submit">Sign in</button>
+
+              <div class="button_div"><input type="submit" name="Submit" value="Login" class="btn btn-primary"></div>
+
+              <div class="clear"></div>
+              <div align="right">Forgot password?&nbsp;<a href="#">Click here to reset</a></div>
+              <div align="right">New Caretaker?&nbsp;<a href="#">Click here to register</a></div>  
+              <div class="clear"></div>
             </fieldset>
-          </form>
+            </form>
+          </div>
        </div>
       </div>
 
       <hr>
 
       <footer>
-        <p>© The Pill Wizard 2012</p>
+        <p>© 2013 Phillips Healthcare</p>
       </footer>
 
     </div>
@@ -81,17 +99,7 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="static/js/jquery.js"></script>
-    <script src="static/js/bootstrap-transition.js"></script>
-    <script src="static/js/bootstrap-alert.js"></script>
-    <script src="static/js/bootstrap-modal.js"></script>
-    <script src="static/js/bootstrap-dropdown.js"></script>
-    <script src="static/js/bootstrap-scrollspy.js"></script>
-    <script src="static/js/bootstrap-tab.js"></script>
-    <script src="static/js/bootstrap-tooltip.js"></script>
-    <script src="static/js/bootstrap-popover.js"></script>
-    <script src="static/js/bootstrap-button.js"></script>
-    <script src="static/js/bootstrap-collapse.js"></script>
-    <script src="static/js/bootstrap-carousel.js"></script>
-    <script src="static/js/bootstrap-typeahead.js"></script>
+    <script src="static/js/knockout.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
 
 </body></html>
