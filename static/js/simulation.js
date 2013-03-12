@@ -18,7 +18,7 @@ function SimulationViewModel(data) {
   self.started_simulation = ko.observable(false);
   self.new_prescription = {
     medicine: ko.observable(''),
-    cannister: ko.observable(''),
+    canister: ko.observable(''),
     schedule: ko.observable(''),
     dosage: ko.observable(''),
     information: ko.observable(''),
@@ -28,7 +28,7 @@ function SimulationViewModel(data) {
   self.add_prescription = function() {
     self.prescriptions.push({
       medicine: self.new_prescription.medicine(),
-      cannister: self.new_prescription.cannister(),
+      canister: self.new_prescription.canister(),
       schedule: self.new_prescription.schedule(),
       dosage: self.new_prescription.dosage(),
       information: self.new_prescription.information(),

@@ -13,19 +13,19 @@ window.data = [
     prescriptions: [
       {
         medicine: 'Benicar',
-        cannister: 'A',
+        canister: 'A',
         schedule: 'Twice a day, 4 hours apart',
         dosage: '2 pill',
         information: 'Do not take with alcohol',
       }, {
         medicine: 'Enbrel',
-        cannister: 'C',
+        canister: 'C',
         schedule: 'Twice a day, 6 hours apart',
         dosage: '1 pill',
         information: 'Do not take with alcohol',
       }, {
         medicine: 'Fentanyl',
-        cannister: 'B',
+        canister: 'B',
         schedule: 'Three times a day, 3 hours apart',
         dosage: '3 pills',
         information: 'Do not take with alcohol',
@@ -59,19 +59,19 @@ window.data = [
     prescriptions: [
       {
         medicine: 'Gleevec',
-        cannister: 'A',
+        canister: 'A',
         schedule: 'Twice a day, 4 hours apart',
         dosage: '2 pill',
         information: 'Do not take with alcohol',
       }, {
         medicine: 'Tricor',
-        cannister: 'C',
+        canister: 'C',
         schedule: 'Twice a day, 6 hours apart',
         dosage: '1 pill',
         information: 'Do not take with alcohol',
       }, {
         medicine: 'Welchol',
-        cannister: 'B',
+        canister: 'B',
         schedule: 'Three times a day, 3 hours apart',
         dosage: '3 pills',
         information: 'Do not take with alcohol',
@@ -105,19 +105,19 @@ window.data = [
     prescriptions: [
       {
         medicine: 'Welchol',
-        cannister: 'A',
+        canister: 'A',
         schedule: 'Twice a day, 4 hours apart',
         dosage: '2 pill',
         information: 'Do not take with alcohol',
       }, {
         medicine: 'Enbrel',
-        cannister: 'C',
+        canister: 'C',
         schedule: 'Twice a day, 6 hours apart',
         dosage: '1 pill',
         information: 'Do not take with alcohol',
       }, {
         medicine: 'Zostavax',
-        cannister: 'B',
+        canister: 'B',
         schedule: 'Three times a day, 3 hours apart',
         dosage: '3 pills',
         information: 'Do not take with alcohol',
@@ -151,19 +151,19 @@ window.data = [
     prescriptions: [
       {
         medicine: 'Benicar',
-        cannister: 'A',
+        canister: 'A',
         schedule: 'Twice a day, 4 hours apart',
         dosage: '2 pill',
         information: 'Do not take with alcohol',
       }, {
         medicine: 'Enbrel',
-        cannister: 'C',
+        canister: 'C',
         schedule: 'Twice a day, 6 hours apart',
         dosage: '1 pill',
         information: 'Do not take with alcohol',
       }, {
         medicine: 'Fentanyl',
-        cannister: 'B',
+        canister: 'B',
         schedule: 'Three times a day, 3 hours apart',
         dosage: '3 pills',
         information: 'Do not take with alcohol',
@@ -197,19 +197,19 @@ window.data = [
     prescriptions: [
       {
         medicine: 'Benicar',
-        cannister: 'A',
+        canister: 'A',
         schedule: 'Twice a day, 4 hours apart',
         dosage: '2 pill',
         information: 'Do not take with alcohol',
       }, {
         medicine: 'Enbrel',
-        cannister: 'C',
+        canister: 'C',
         schedule: 'Twice a day, 6 hours apart',
         dosage: '1 pill',
         information: 'Do not take with alcohol',
       }, {
         medicine: 'Fentanyl',
-        cannister: 'B',
+        canister: 'B',
         schedule: 'Three times a day, 3 hours apart',
         dosage: '3 pills',
         information: 'Do not take with alcohol',
@@ -243,19 +243,19 @@ window.data = [
     prescriptions: [
       {
         medicine: 'Benicar',
-        cannister: 'A',
+        canister: 'A',
         schedule: 'Twice a day, 4 hours apart',
         dosage: '2 pill',
         information: 'Do not take with alcohol',
       }, {
         medicine: 'Enbrel',
-        cannister: 'C',
+        canister: 'C',
         schedule: 'Twice a day, 6 hours apart',
         dosage: '1 pill',
         information: 'Do not take with alcohol',
       }, {
         medicine: 'Fentanyl',
-        cannister: 'B',
+        canister: 'B',
         schedule: 'Three times a day, 3 hours apart',
         dosage: '3 pills',
         information: 'Do not take with alcohol',
@@ -290,19 +290,19 @@ window.data = [
     prescriptions: [
       {
         medicine: 'Benicar',
-        cannister: 'A',
+        canister: 'A',
         schedule: 'Twice a day, 4 hours apart',
         dosage: '2 pill',
         information: 'Do not take with alcohol',
       }, {
         medicine: 'Enbrel',
-        cannister: 'C',
+        canister: 'C',
         schedule: 'Twice a day, 6 hours apart',
         dosage: '1 pill',
         information: 'Do not take with alcohol',
       }, {
         medicine: 'Fentanyl',
-        cannister: 'B',
+        canister: 'B',
         schedule: 'Three times a day, 3 hours apart',
         dosage: '3 pills',
         information: 'Do not take with alcohol',
@@ -336,19 +336,19 @@ window.data = [
     prescriptions: [
       {
         medicine: 'Benicar',
-        cannister: 'A',
+        canister: 'A',
         schedule: 'Twice a day, 4 hours apart',
         dosage: '2 pill',
         information: 'Do not take with alcohol',
       }, {
         medicine: 'Enbrel',
-        cannister: 'C',
+        canister: 'C',
         schedule: 'Twice a day, 6 hours apart',
         dosage: '1 pill',
         information: 'Do not take with alcohol',
       }, {
         medicine: 'Fentanyl',
-        cannister: 'B',
+        canister: 'B',
         schedule: 'Three times a day, 3 hours apart',
         dosage: '3 pills',
         information: 'Do not take with alcohol',
@@ -382,19 +382,19 @@ window.data = [
     prescriptions: [
       {
         medicine: 'Benicar',
-        cannister: 'A',
+        canister: 'A',
         schedule: 'Twice a day, 4 hours apart',
         dosage: '2 pill',
         information: 'Do not take with alcohol',
       }, {
         medicine: 'Enbrel',
-        cannister: 'C',
+        canister: 'C',
         schedule: 'Twice a day, 6 hours apart',
         dosage: '1 pill',
         information: 'Do not take with alcohol',
       }, {
         medicine: 'Fentanyl',
-        cannister: 'B',
+        canister: 'B',
         schedule: 'Three times a day, 3 hours apart',
         dosage: '3 pills',
         information: 'Do not take with alcohol',
