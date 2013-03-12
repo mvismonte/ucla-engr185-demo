@@ -157,12 +157,42 @@
         <h3>Add Prescription</h3>
     </div>
     <div class="modal-body">
-      hello world
+      <form class="form-horizontal" action="#">
+        <div class="control-group">
+          <label class="control-label" for="inputEmail">Medicine</label>
+          <div class="controls">
+            <input type="text" data-bind="value: new_prescription.medicine" placeholder="Medicine">
+          </div>
+        </div>
+        <div class="control-group">
+          <label class="control-label" for="inputEmail">Cannister</label>
+          <div class="controls">
+            <input type="text" data-bind="value: new_prescription.cannister"  placeholder="Cannister">
+          </div>
+        </div>
+        <div class="control-group">
+          <label class="control-label" for="inputEmail">Schedule</label>
+          <div class="controls">
+            <input type="text" data-bind="value: new_prescription.schedule"  placeholder="Schedule">
+          </div>
+        </div>
+        <div class="control-group">
+          <label class="control-label" for="inputEmail">Dosage</label>
+          <div class="controls">
+            <input type="text" data-bind="value: new_prescription.dosage"  placeholder="Dosage">
+          </div>
+        </div>
+        <div class="control-group">
+          <label class="control-label" for="inputEmail">Information</label>
+          <div class="controls">
+            <input type="text" data-bind="value: new_prescription.information"  placeholder="Information">
+          </div>
+        </div>
+      </form>
     </div>
-    <div class="modal-footer" data-bind="visible: uploadUploadSuccess() == false">
-      <img data-bind="visible: uploadAjaxInProgress" src="/static/img/ajax-loader.gif" style="display: none;">
+    <div class="modal-footer">
       <a href="#" class="btn" data-dismiss="modal">Cancel</a>
-      <a href="#" data-bind="click: sendBulkUpload, css: {'disabled': uploadDisableSubmit}" class="btn btn-primary disabled">Upload</a>
+      <a href="#" data-bind="click: add_prescription" class="btn btn-primary">Add Prescription</a>
     </div>
   </div>
 

@@ -16,7 +16,25 @@ function SimulationViewModel(data) {
   self.sending_http = false;
   self.counting_down = true;
   self.started_simulation = ko.observable(false);
+  self.new_prescription = {
+    medicine: ko.observable(''),
+    cannister: ko.observable(''),
+    schedule: ko.observable(''),
+    dosage: ko.observable(''),
+    information: ko.observable(''),
+  };
   var wait_time = 0;
+
+  self.add_prescription = function() {
+    self.prescriptions.push({
+      medicine: self.new_prescription.medicine(),
+      cannister: self.new_prescription.cannister(),
+      schedule: self.new_prescription.schedule(),
+      dosage: self.new_prescription.dosage(),
+      information: self.new_prescription.information(),
+    });
+    $('#add-prescription').modal('hide');
+  }
 
   self.start_simulation = function() {
     if (self.started_simulation()) {
